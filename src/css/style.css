@@ -1,0 +1,6 @@
+body {
+    background-color: #d1f0ff;
+    overflow: hidden;
+    border-radius: 30px;
+    -webkit-app-region: drag
+}

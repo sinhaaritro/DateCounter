@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <title>Date Calculator</title>
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="section" id="cardSection">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel blue center" id="dateCard">
+                        <h5 class="white-text">Today is the</h5>
+                        <h1 class="white-text no-mar"><span id="daysCount">34</span><span id="daysSuffix">th</span>
+                        </h1>
+                        <h6 class="white-text">day of the year</h6>
+                    </div>
+                    <div class="card-action center">
+                        <span class="">BTW, <span class="" id="daysLeft">34</span> days are left till the end of the
+                            year</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="section">
+        <div class="container center">
+            <button class="btn waves-effect" id="customDateButton">Check custom date</button>
+            <br>
+            <input type="text" class="datepicker">
+        </div>
+    </div> -->
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="./js/materialize.min.js"></script>
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+    </script>
+    <script>
+        require('./js/script.js')
+    </script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calander = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(calander, options);
+        });
+    </script> -->
+</body>
+
+</html>
