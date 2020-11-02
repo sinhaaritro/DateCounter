@@ -1,11 +1,18 @@
 # DateCounter
  
-A date counter that will tell you the which date it is.
+A date counter that will tell you the which date of the year it is. It also tells you the number of days remaining.
+
+Made with html, css, jss and wrapped with electron. 
 
 ## To create exe use
 
-Tun the following commands: 
+Run the following commands: 
 
-npm install
+1. npm install
 
-npm run package-win
+2. npm run package-win
+
+
+## Screenshot
+
+![App Screenshot](Screenshot/Screenshot.png?raw=true)
